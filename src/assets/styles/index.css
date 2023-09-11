@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    html , body, #root{
+        @apply h-full antialiased w-full bg-white text-black
+    }
+    .wrapper{
+        @apply flex-1
+    }
+}
