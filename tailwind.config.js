@@ -8,6 +8,9 @@ export default {
     extend: {
       colors : {
         dark : "#0a0a0a",
+      },
+      boxShadow : {
+        instagram : "0px 0px 9px 3px rgba(0,0,0,0.24)"
       }
     },
   },

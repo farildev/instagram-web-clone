@@ -15,7 +15,7 @@ const App = () => {
     <>
       <div className='flex'>
         <Sidebar/>
-        <div className="wrapper">
+        <div className="wrapper pt-[35px] px-10">
           <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/explore' element={<Explore/>}/>
