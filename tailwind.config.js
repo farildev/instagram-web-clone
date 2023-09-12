@@ -8,11 +8,15 @@ export default {
     extend: {
       colors : {
         dark : "#0a0a0a",
+        active : "#282828",
+        link : "#b3b3b3",
       },
       boxShadow : {
-        instagram : "0px 0px 9px 3px rgba(0,0,0,0.24)"
+        instagram : "0px 0px 9px 3px rgba(0,0,0,0.15)"
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp')
+  ],
 }

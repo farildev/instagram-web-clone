@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import ProfileSidebar from '../layouts/ProfileSidebar';
+import Feed from '../layouts/Feed';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='flex justify-center w-full'>
+      <Feed/>
+      <ProfileSidebar/>
+    </div>
   )
 }
 
