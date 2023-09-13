@@ -10,13 +10,13 @@ const ProfileSidebar = () => {
         image : "https://www.theweeknd.com/files/2021/10/photo_202110_07_BRIANZIFF_THEWEEKND_74-1.jpeg",
     }
   return (
-    <aside className='flex flex-col w-[383px] pl-16'>
+    <aside className='xl:flex lg:hidden md:hidden sm:hidden xs:hidden flex-col w-[383px] pl-16'>
         <ProfileArea profile={profile} />
-        <div className='w-full flex items-center justify-between mt-4 px-1 py-4'>
+        <div className='w-full flex items-center justify-between mt-2 p-4'>
             <h4 className='text-gray-600 text-sm font-semibold'>Suggested for you</h4>
             <a className='text-black font-semibold text-xs hover:text-gray-500' href="">See All</a>
         </div>
-        <div className='mt-2 w-full'>
+        <div className='w-full'>
         {
         user.map((index, key) => (
         <div key={key} className='flex items-center justify-start gap-x-3 py-2 px-4 w-full'>
@@ -36,6 +36,21 @@ const ProfileSidebar = () => {
         </div>
             ))
         }
+        </div>
+        <div className='text-xs text-gray-400/80 font-medium flex flex-wrap gap-2 mt-5 py-2 px-4'>
+            <a href="">About</a>
+            <a href="">Help</a>
+            <a href="">Press</a>
+            <a href="">API</a>
+            <a href="">Jobs</a>
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Locations</a>
+            <a href="">Language</a>
+            <a href="">Meta Verified</a>
+            <div className='mt-2'>
+            © 2023 INSTAGRAM FROM META
+            </div>
         </div>
     </aside>
   )

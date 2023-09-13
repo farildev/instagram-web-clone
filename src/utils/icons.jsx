@@ -131,6 +131,40 @@ const VerifiedIcon = ({size}) => {
         </svg>
     )
 }
+const MoreIcon = ({size}) => {
+    return (
+        <svg aria-label="More Options" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height={size} role="img" viewBox="0 0 24 24" width={size}>
+            <circle cx="12" cy="12" r="1.5"/>
+            <circle cx="6" cy="12" r="1.5"/>
+            <circle cx="18" cy="12" r="1.5"/>
+        </svg>
+
+    )
+}
+const CommentIcon = ({size}) => {
+    return (
+        <svg aria-label="Comment" class="x1lliihq x1n2onr6" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height={size} role="img" viewBox="0 0 24 24" width={size}>
+            <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+
+    )
+}
+const SendIcon = ({size}) => {
+    return (
+        <svg aria-label="Share Post" class="x1lliihq x1n2onr6" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height={size} role="img" viewBox="0 0 24 24" width={size}>
+        <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"/>
+        <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+
+    )
+}
+const SmileIcon = ({size}) => {
+    return (
+        <svg aria-label="Emoji" class="x1lliihq x1n2onr6" color="rgb(115, 115, 115)" fill="rgb(115, 115, 115)" height={size} role="img" viewBox="0 0 24 24" width={size}>
+            <path d="M15.83 10.997a1.167 1.167 0 1 0 1.167 1.167 1.167 1.167 0 0 0-1.167-1.167Zm-6.5 1.167a1.167 1.167 0 1 0-1.166 1.167 1.167 1.167 0 0 0 1.166-1.167Zm5.163 3.24a3.406 3.406 0 0 1-4.982.007 1 1 0 1 0-1.557 1.256 5.397 5.397 0 0 0 8.09 0 1 1 0 0 0-1.55-1.263ZM12 .503a11.5 11.5 0 1 0 11.5 11.5A11.513 11.513 0 0 0 12 .503Zm0 21a9.5 9.5 0 1 1 9.5-9.5 9.51 9.51 0 0 1-9.5 9.5Z"/>
+        </svg>
+    )
+}
 
 
 const Icon = ({name , size=24}) =>{
@@ -150,7 +184,11 @@ const Icon = ({name , size=24}) =>{
         saved : SavedIcon,
         theme : ThemeIcon,
         report : ReportIcon,
-        verified : VerifiedIcon
+        verified : VerifiedIcon,
+        more: MoreIcon,
+        send : SendIcon,
+        comment : CommentIcon,
+        smile : SmileIcon
 
     }
     const Component = icons[name]

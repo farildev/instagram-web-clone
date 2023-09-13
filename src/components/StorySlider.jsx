@@ -3,7 +3,7 @@ import users from "../data/user";
 
 const StorySlider = () => {
   return (
-    <div className='w-full flex items-center gap-x-5'>
+    <div className='w-full flex items-center gap-x-5 py-2'>
         {
             users.map((user) => (
                 <div key={user.id} className='w-16 flex flex-col items-center'>

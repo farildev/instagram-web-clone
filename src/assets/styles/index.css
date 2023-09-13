@@ -4,10 +4,10 @@
 
 @layer base{
     html , body, #root{
-        @apply h-full antialiased w-full bg-white text-black
+        @apply h-full antialiased w-full bg-main text-black
     }
     .wrapper{
-        @apply flex-1
+        @apply flex
     }
     nav a.active{
         @apply font-bold
