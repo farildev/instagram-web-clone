@@ -2,9 +2,14 @@ import React from 'react';
 import Logo from "../assets/images/instagram-wordmark.svg";
 import {NavLink} from "react-router-dom";
 import { Icon } from '../utils/icons';
+import {useSelector , useDispatch} from "react-redux";
+import { setToggle } from '../stores/site';
 import SidebarDropdown from '../components/SidebarDropdown';
 
 const SidebarItems = () => {
+  const dispatch = useDispatch();
+  const {toggle} = useSelector((state) => state.site);
+  console.log(toggle);
   return (
     <nav className='flex flex-col h-full relative justify-between'>
           <div>
@@ -38,7 +43,7 @@ const SidebarItems = () => {
               </li>
               <li className='p-3 my-2 flex gap-x-4 hover:bg-gray-300/20 rounded-lg'>
                 <Icon name="create" size={24}/>
-                <NavLink to={'/b'}>Create</NavLink>
+                <button onClick={()=>dispatch(setToggle(true))}>Create</button>
               </li>
               <li className='p-3 my-2 flex gap-x-4 hover:bg-gray-300/20 rounded-lg'>
                 <Icon name="profile" size={24}/>

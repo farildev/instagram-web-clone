@@ -9,10 +9,16 @@ import Settings from './views/Settings';
 import Login from './views/Login';
 import Register from './views/Register';
 import Sidebar from './layouts/Sidebar';
+import CreatePost from './components/CreatePost';
+import { useSelector } from 'react-redux';
 
 const App = () => {
+  const {toggle} = useSelector((state) => state.site)
   return (
     <>
+        {
+          (toggle ? <CreatePost/> : "")
+        }
       <div className='flex'>
         <Sidebar/>
         <div className="wrapper pt-[40px] flex-auto overflow-auto px-10">
