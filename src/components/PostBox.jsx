@@ -40,7 +40,7 @@ const PostBox = ({detail}) => {
             </div>
             <div className='w-full flex-1 gap-x-2 mt-2'>
                 <h2 className='text-sm font-semibold '>{detail.name}</h2>
-                <p className='flex-1 text-sm font-light break-words line-clamp-2'>
+                <p className='flex-1 text-sm font-medium break-words line-clamp-2'>
                 {detail.description}
                 </p>
             </div>

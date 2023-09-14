@@ -1,7 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
+import siteReducer from "./site";
 
-export default store = configureStore({
+export default configureStore({
     reducer : {
-        
+        site : siteReducer
     }
 })
