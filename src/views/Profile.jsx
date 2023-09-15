@@ -51,9 +51,9 @@ const Profile = () => {
         </div>
       </div>
       <section className='ml-5 flex justify-start items-center'>
-        <div className='py-[10px] flex flex-col gap-y-2 items-center gap-x-5 px-4' >
-          <span className='bg-gray-300/20 w-[87px] h-[87px] flex items-center justify-center rounded-full cursor-pointer'>
-          <AiOutlinePlus size={44} color='gray' />
+        <div className='py-[10px] flex flex-col gap-y-2 items-center gap-x-5 px-4 ' >
+          <span className='bg-gray-300/10 w-[87px] h-[87px] flex items-center justify-center rounded-full cursor-pointer border border-gray-200'>
+          <AiOutlinePlus size={44} color='#c7c7c7' />
           </span>
           <span className='text-xs font-semibold'>New</span>
         </div>
