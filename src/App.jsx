@@ -21,7 +21,7 @@ const App = () => {
         }
       <div className='flex'>
         <Sidebar/>
-        <div className="wrapper pt-[40px] flex-auto overflow-auto px-10">
+        <div className="wrapper pt-[30px] flex-auto overflow-auto">
           <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/explore' element={<Explore/>}/>

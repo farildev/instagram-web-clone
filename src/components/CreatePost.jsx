@@ -18,7 +18,7 @@ const CreatePost = () => {
             <div className='p-6 h-full flex flex-col items-center justify-center'>
                 <Icon name="createArea" size={96} />
                 <span className='font-medium text-xl'>Drag photos and videos here</span>
-                <button className='bg-sky-600 mt-5 text-white font-semibold text-sm rounded-lg px-4 py-[7px]'>Select From Computer</button>
+                <button className='bg-sky-500 mt-5 text-white font-semibold text-sm rounded-lg px-4 py-[7px]'>Select From Computer</button>
             </div>
         </div>
     </div>
