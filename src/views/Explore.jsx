@@ -1,5 +1,8 @@
 import React, {useState , useEffect} from 'react';
-
+import { Icon } from '../utils/icons';
+import {FaComment} from "react-icons/fa";
+import {AiTwotoneHeart} from "react-icons/ai";
+import { IconContext } from 'react-icons';
 
 const Explore = () => {
   const [image , setImage] = useState([]);
@@ -16,10 +19,21 @@ const Explore = () => {
       <div className='grid grid-cols-3'>
         {
           image.map((photos,key) => (
-            <div className='w-[450px] h-[450px] group transition-all gap-2' key={key}>
-              <div className='bg-dark w-full h-full z-10 group-hover:bg-opacity-20 bg-opacity-40'></div>
-              <img className='object-cover w-full h-full' src={photos.urls.raw} alt={photos.id} />
-            </div>
+            <IconContext.Provider value={{color:"white" , size:"20px"}}>
+                <div className=' group transition-all gap-2' key={key}>
+                <div className='bg-black hidden items-center justify-center gap-x-5 w-full h-full z-10 group-hover:flex group-hover:opacity-10'>
+                  <span className='text-white text-md font-bold flex items-center gap-x-2'>
+                    <AiTwotoneHeart />
+                    2234
+                  </span>
+                  <span className='text-white text-md font-bold flex items-center gap-x-2'>
+                    <FaComment />
+                    2234
+                  </span>
+                </div>
+                <img className='object-cover w-full h-full' src={photos.urls.raw} alt={photos.id} />
+              </div>
+            </IconContext.Provider>
           ))
         }
       </div>
