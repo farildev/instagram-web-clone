@@ -9,9 +9,9 @@ const SidebarDropdown = () => {
       {() => (
         <>
 
-        <Menu.Button className={`text-md p-3 my-1 font-semibold gap-x-4 flex w-full`}>
+        <Menu.Button className={`text-md p-3 my-1 hover:scale-[1.06] font-semibold gap-x-4 flex xl:justify-start justify-center w-full`}>
               <Icon name="hamburger" size={24}/>
-              <span>Settings</span>
+              <span className='hidden xl:flex'>Settings</span>
         </Menu.Button>
         <Menu.Items className={`absolute p-2 bottom-10 text-sm font-medium left-0 shadow-instagram bg-white w-[266px] rounded-xl gap-4 -translate-y-3`}>
                     <div className='border-b-[0.5rem] pb-2 border-gray-300/20'>

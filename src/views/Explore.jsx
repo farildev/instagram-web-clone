@@ -1,8 +1,6 @@
 import React, {useState , useEffect} from 'react';
-import { Icon } from '../utils/icons';
 import {FaComment} from "react-icons/fa";
 import {AiTwotoneHeart} from "react-icons/ai";
-import { IconContext } from 'react-icons';
 
 const Explore = () => {
   const [image , setImage] = useState([]);
@@ -15,25 +13,23 @@ const Explore = () => {
     .then(data => setImage(data));
   },[])
   return (
-    <section className='w-full h-full'>
+    <section className='w-full h-full px-[150px]'>
       <div className='grid grid-cols-3'>
         {
           image.map((photos,key) => (
-            <IconContext.Provider value={{color:"white" , size:"20px"}}>
-                <div className=' group transition-all gap-2' key={key}>
-                <div className='bg-black hidden items-center justify-center gap-x-5 w-full h-full z-10 group-hover:flex group-hover:opacity-10'>
-                  <span className='text-white text-md font-bold flex items-center gap-x-2'>
-                    <AiTwotoneHeart />
-                    2234
-                  </span>
-                  <span className='text-white text-md font-bold flex items-center gap-x-2'>
-                    <FaComment />
-                    2234
-                  </span>
-                </div>
+                <div className='w-[300px] h-[300px] relative group transition-all gap-2 cursor-pointer mt-2' key={key}>
+                  <div className='bg-black absolute top-0 left-0 hidden items-center justify-center gap-x-5 w-full h-full z-10 group-hover:flex group-hover:bg-opacity-50'>
+                    <span className='text-white text-md font-bold flex items-center gap-x-2'>
+                      <AiTwotoneHeart size={20} color='#fff' />
+                        2234
+                    </span>
+                    <span className='text-white text-md font-bold flex items-center gap-x-2'>
+                      <FaComment size={16} color='#fff' />
+                      2234
+                    </span>
+                  </div>
                 <img className='object-cover w-full h-full' src={photos.urls.raw} alt={photos.id} />
               </div>
-            </IconContext.Provider>
           ))
         }
       </div>
