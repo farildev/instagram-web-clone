@@ -23,8 +23,8 @@ const SearchSidebar = () => {
                 {users.map((user) => (
                     <div key={user.id} className='flex justify-between items-center'>
                         <div className='flex gap-x-3'>
-                            <div className='w-[64px] h-[64px] flex items-center justify-center border-2 rounded-full border-pink-500'>
-                                <img className='w-full h-full rounded-full object-cover' src={user.image} alt="" />
+                            <div className='w-16 h-11 border-2 rounded-full border-pink-500'>
+                                <img className='w-full h-full object-cover rounded-full ' src={user.image} alt="" />
                             </div>
                             <div className='line-clamp-1 w-full text-sm font-bold flex flex-col p-2'>
                                 <span>{user.name}</span>
