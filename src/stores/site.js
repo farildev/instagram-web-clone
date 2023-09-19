@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    toggle : false
+    toggle : false,
+    sidebar : false
 }
 
 const siteSlice = createSlice({
@@ -10,12 +11,16 @@ const siteSlice = createSlice({
     reducers : {
         setToggle : (state , action) => {
             state.toggle = action.payload
+        },
+        setSidebar : (state , action) => {
+            state.sidebar = action.payload
         }
     }
 })
 
 export const {
-    setToggle
+    setToggle,
+    setSidebar
 } = siteSlice.actions
 
 export default siteSlice.reducer

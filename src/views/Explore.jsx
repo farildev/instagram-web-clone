@@ -6,7 +6,6 @@ const Explore = () => {
   const [image , setImage] = useState([]);
 
   const BASE_API = `https://api.unsplash.com/photos/?client_id=QmBrV0KuJ4kC_79Ojp8kTacHcUxHm2ZIXEshwPzVdVc`;
-  // const API_KEY = `QmBrV0KuJ4kC_79Ojp8kTacHcUxHm2ZIXEshwPzVdVc`;
   useEffect(() => {
     fetch(`${BASE_API}`)
     .then(res => res.json())
@@ -21,7 +20,7 @@ const Explore = () => {
                   <div className='bg-black absolute top-0 left-0 hidden items-center justify-center gap-x-5 w-full h-full z-10 group-hover:flex group-hover:bg-opacity-50'>
                     <span className='text-white text-md font-bold flex items-center gap-x-2'>
                       <AiTwotoneHeart size={20} color='#fff' />
-                        2234
+                        {photos.likes}
                     </span>
                     <span className='text-white text-md font-bold flex items-center gap-x-2'>
                       <FaComment size={16} color='#fff' />

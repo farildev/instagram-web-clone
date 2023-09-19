@@ -10,7 +10,8 @@ export default {
         dark : "#0a0a0a",
         active : "#282828",
         link : "#b3b3b3",
-        main : "#fafafa"
+        main : "#fafafa",
+        input : "#efefef"
       },
       boxShadow : {
         instagram : "0px 0px 9px 3px rgba(0,0,0,0.15)"

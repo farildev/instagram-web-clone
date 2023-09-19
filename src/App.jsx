@@ -10,12 +10,14 @@ import Login from './views/Login';
 import Register from './views/Register';
 import Sidebar from './layouts/Sidebar';
 import CreatePost from './components/CreatePost';
+import SearchSidebar from './components/SearchSidebar';
 import { useSelector } from 'react-redux';
 
 const App = () => {
   const {toggle} = useSelector((state) => state.site)
   return (
     <>
+      <SearchSidebar/>
         {
           (toggle ? <CreatePost/> : "")
         }
