@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 const SearchSidebar = () => {
     const {sidebar} = useSelector((state)=> state.site);
   return (
-    <aside className={`w-[400px] shadow top-0 bg-main h-full z-20 transform ${sidebar ? "fixed xl:left-[16.5%] left-[8%]" : "hidden"} `}>
+    <aside className={`w-[400px] border border-gray-400/30 top-0 bg-main h-full transition-all duration-300 z-20 ${sidebar ? "fixed xl:left-[16.5%] left-[8%]" : "hidden -left-0"} `}>
         <div className='h-[130px] p-5  flex flex-col justify-between border-b border-gray-400/50 pb-6'>
             <h1 className='text-2xl font-bold'>Search</h1>
             <div className='flex items-center justify-between bg-input rounded-lg py-2 px-3'>

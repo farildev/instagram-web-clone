@@ -17,7 +17,7 @@ const SidebarItems = () => {
               <Link to={'/'} className='xl:hidden group-hover:scale-[1.06] hover:bg-gray-300/20 p-3 flex items-center rounded-lg cursor-pointer'>
                 <AiOutlineInstagram size={28} />
               </Link>
-              
+
               <Link to={'/'}>
               <img src={Logo} className='w-[110px] hidden items-center xl:flex ' alt="" />
               </Link>
@@ -25,7 +25,7 @@ const SidebarItems = () => {
             <ul className='text-md font-medium w-full'>
               <NavLink to={'/'} className='p-3 my-2 gap-x-4 hover:scale-[1.06] cursor-pointer flex xl:justify-start justify-center items-center hover:bg-gray-300/20 rounded-lg'>
                 <Icon  name="home" size={24}/>
-                <span className='hidden xl:flex' to={'/'}>Home</span>
+                <span className="hidden xl:flex" to={'/'}>Home</span>
               </NavLink>
               <button onClick={()=>dispatch(setSidebar(!sidebar))} className='p-3 w-full my-2 gap-x-4 hover:scale-[1.06] cursor-pointer flex xl:justify-start justify-center hover:bg-gray-300/20 rounded-lg'>
                 <Icon name="search" size={24}/>

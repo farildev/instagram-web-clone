@@ -14,7 +14,7 @@ import SearchSidebar from './components/SearchSidebar';
 import { useSelector } from 'react-redux';
 
 const App = () => {
-  const {toggle} = useSelector((state) => state.site)
+  const {toggle} = useSelector((state) => state.site);
   return (
     <>
       <SearchSidebar/>
@@ -25,7 +25,8 @@ const App = () => {
         <Sidebar/>
         <div className="wrapper pt-[30px] flex-auto overflow-auto">
           <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/login' element={<Login />} />
+          <Route path='/home' element={<Home/>}/>
           <Route path='/explore' element={<Explore/>}/>
           <Route path='/reels' element={<Reels/>}/>
           <Route path='/directs' element={<Directs/>}/>

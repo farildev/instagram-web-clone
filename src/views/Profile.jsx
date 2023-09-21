@@ -13,7 +13,7 @@ const Profile = () => {
         <div className='mb-11'>
           <div className='flex items-center gap-x-3'>
             <div className='text-xl font-medium'>
-              johndoe
+              farilcreative
             </div>
             <div className='flex ml-2 justify-end gap-x-2'>
             <Link className='px-4 h-8 bg-gray-300/60 text-sm font-bold rounded-md flex items-center'>Edit Profile</Link>
